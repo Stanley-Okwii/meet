@@ -60,4 +60,9 @@ The Meet app is a progressive web application with a serverless backend, offerin
   **When** they request to see charts visualizing event details
 
   **Then** the app should display charts providing insights into the event data
+
+  **USE OF SERVERLESS FUNCTION IN THE MEET APP**
+  * Using serverless functions in the meet app will allow the app to dynamically scale the
+resources based on user demands. It will allow having backend code without a server and
+simplify the code needed.
   
