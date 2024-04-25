@@ -47,7 +47,9 @@ export const getEvents = async () => {
 
 export const getAccessToken = async () => {
   const accessToken = localStorage.getItem('access_token');
+  console.log('Access Token vor der Tokenüberprüfung:', accessToken);
   const tokenCheck = accessToken && (await checkToken(accessToken));
+  console.log('Access Token nach der Tokenüberprüfung:', accessToken);
 
   if (!accessToken || tokenCheck.error) {
     await localStorage.removeItem("access_token");
