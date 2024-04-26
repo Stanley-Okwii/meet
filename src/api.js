@@ -28,7 +28,6 @@ export const getEvents = async () => {
   }
 
   const token = await getAccessToken();
-  // https://2xh0ggc2r0.execute-api.eu-central-1.amazonaws.com/dev/api/get-events
   if (token) {
     removeQuery();
     const url = "https://2xh0ggc2r0.execute-api.eu-central-1.amazonaws.com/dev/api/get-events" + "/" + token;
